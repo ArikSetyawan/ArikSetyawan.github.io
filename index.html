@@ -1,239 +1,160 @@
 <!DOCTYPE html>
-<html id="home">
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Setyawan Arik</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Menyisipkan Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-</head>
-
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand page-scroll" href="#home">.Me</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="#about" class="nav-link page-scroll">About</a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link page-scroll">Portfolio</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- akhir navbar -->
-
-    <!-- header -->
-   <div class="jumbotron text-center">
-       <img src="static/image/profile.jpg" class="rounded-circle">
-       <h1>Arik Bagus Setyawan</h1>
-       <p>College Student | Web Developer</p>
-       <p><a href="https://github.com/ariksetyawan" target="_blank"><i class="fab fa-github" style="color: black;"></i></a> &nbsp <a href="mailto:setyawanarik@gmail.com"><i class="fa fa-envelope" style="color: black;"></i></a></p>
-   </div>
-   <!-- akhir header -->
-
-   <!-- about -->
-   <section class="about" id="about">
-       <div class="container">
-           <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center">About</h2>
-                    <hr>   
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>@setyawanarik</title>
+        <!-- Font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap 5.2 CSS -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style type="text/css">
+            html,body{
+                height: 100%;
+            }
+            body{
+                font-family: 'Roboto Slab', sans-serif;
+                color: #5a5a5a;
+            }
+            h1{
+                font-size: 58px;
+                padding: 14px 10px;
+            }
+            h2 {
+                font-size: 28px;
+                padding: 14px 10px;
+            }
+            .container{
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            header #buttons{
+                display: inline-block;
+                font-size: 30px;
+                padding: 30px;
+            }
+            header{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .btn:hover{
+                border-color: transparent !important;
+                background-color: transparent !important;
+                text-decoration: none;
+            }
+            .btn:focus{
+                color: #000 !important;
+                border-color: transparent !important;
+                background-color: transparent !important;
+                text-decoration: none;
+            }
+            .content p{
+                font-size: 38px;
+                padding: 14px 10px;
+            }
+            .title{
+                color: #e67e22;
+            }
+            .nav-item{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .nav-item a{
+                text-decoration: none;
+                color: #5a5a5a;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!-- Button for canvas -->
+            <button class="btn btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i id="link-toc" class="fa fa-bars"></i></button>
+            <!-- Canvas -->
+            <div style="width: 200px !important;" class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-code"></i></span> <a href="index.html">.me</a>
                 </div>
-           </div>
-
-            <div class="row">
-                <div class="col-sm-5 offset-sm-1">
-                    <p><h2>About:</h2>
-                        <p>Saya anak pertama dari dua bersaudara, saya mampu berbicara bahasa Indonesia dengan baik. Saya memiliki kemampuan untuk membuat Website atau web service. Saya mudah bergaul dan bisa bekerja sama dengan tim.</p>
-                        <h2>Skills:</h2>
-                        <ul>
-                            <li>Python</li>
-                            <li>Flask</li>
-                            <li>SQL</li>
-                            <li>MongoDB</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                        </ul>
-                    </p>                  
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-laptop-code"></i></i></span> <a href="index.html">.Portfolio</a>
                 </div>
-                <div class="col-sm-5">
-                    <p><h2>Education:</h2>
-                        <ul style="font-size: 17px;">
-                            <li>SDN 2 DRIYOREJO, GRESIK <br> 2006 – 2012 </li>
-                            <li>SMP AL-ISLAM KRIAN, SIDOARJO <br> 2012 – 2015 </li>
-                            <li>SMK KRIAN 1, SIDOARJO (REKAYASA PERANGKAT LUNAK) <br> 2015 – 2018 </li>
-                            <li>UNIVERSITAS MUHAMMADIYAH SIDOARJO, SIDOARJO(S1 TEKNIK INFORMATIKA) <br> 2018 – SEKARANG </li>
-                        </ul>
-                    </p>
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-graduation-cap"></i></span> <a href="index.html">.Edication</a>
                 </div>
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-briefcase"></i></span> <a href="index.html">.Experience</a>
+                </div>
+              </div>
             </div>
-       </div>
-   </section>
-   <!-- akhir about -->
+        </header>
 
-    <!-- portfolio -->
-
-    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center">Portfolio</h2>
-                    <hr>
+                <div class="col-md-12 text-center">
+                    <h1 class="title" >Hi. I'am Arik, <span class="element"></span></h1>
+                    <h2>Back-End Developer. Full time learner.</h2>
+                    <br><br>
+                </div>
+                <div class="content col-md-12">
+                    <p>
+                        <s>Student at <a href="https://umsida.ac.id/" target="_BLANK">Muhammadiyah Univeristy of Sidoarjo</a></s>. Recently graduated that like working around with <a href="https://www.python.org/" target="_BLANK">snake</a> in a <a href="https://flask.palletsprojects.com/en/2.2.x/" target="_BLANK">bottle</a> that also like playing with <a href="https://flutter.dev/" target="_BLANK">this</a>.<br> But prefered to known as full time learner and researcher about new techlonogy.
+                    </p>
+                    <p>
+                        I like to share my knowledge to everyone, that's why in future i also want to be lecture.
+                    </p>
+                    <h1>tl;dr?</h1>
+                    <p>
+                        Because you are already here. Here's what you can do. <br> <a href="mastya.my.id" target="_BLANK">See</a> a few thing that i already do. Or <a href="https://twitter.com/SetyawanAriik" target="_BLANK">greet</a> me so i can know you've been here.  
+                    </p>
+                    <p>
+                        I usualy working with several language and framework such as <a href="https://www.python.org/" target="_BLANK">Python</a>, <a href="https://flask.palletsprojects.com/en/2.2.x/" target="_BLANK">Flask</a>, <a href="https://www.javascript.com/" target="_BLANK">Javascript</a>, <a href="https://nodejs.org/en/" target="_BLANK">Node.js</a>, <a href="https://expressjs.com/" target="_BLANK">Express.js</a>, <a href="https://dart.dev/" target="_BLANK">Dart</a>, and <a href="https://flutter.dev/" target="_BLANK">Flutter</a>. Sometimes i also need a space thats why i also using <a href="https://www.mysql.com/" target="_BLANK">MySQL</a>, <a href="https://www.mongodb.com/" target="_BLANK">MongoDB</a>, and <a href="https://neo4j.com/" target="_BLANK">Neo4j</a>.
+                    </p>
+                    <p>
+                        <a href="https://github.com/ArikSetyawan" target="_BLANK">See</a> what currently i'am playing with. <a href="mailto:setyawanarik@gmail.com">Contact me</a>, if you are interested to do something fun with me.
+                    </p>
+                    <p>
+                        Anyway. Thanks to visit me. I am Arik Setyawan, Adios!!
+                    </p>
+                    <br><br><br>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="#" data-toggle="modal" data-target="#Modalpt1">    
-                        <img src="static/image/pt1/2.png" class="img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="#" data-toggle="modal" data-target="#Modalpt2">    
-                        <img src="static/image/pt2/1.png" class="img-thumbnail">
-                    </a>
-                </div>
-            </div>
+            
         </div>
-    </section>
-    <br><br><br>
-    <!-- akhir portfolio -->
+        
+        <!-- Import typed.min.js file from typed.js folder -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        
+        <!-- Add jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!-- Modal -->
-    <div class="modal fade" id="Modalpt1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Restoku App</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="carouselpt1" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselpt1" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselpt1" data-slide-to="1"></li>
-                <li data-target="#carouselpt1" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="static/image/pt1/1.png" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="static/image/pt1/2.png" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="static/image/pt1/3.png" alt="Third slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselpt1" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselpt1" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-            <br>
-            <h5>Project Description:</h5>
-            <p>&nbsp&nbsp&nbsp Aplikasi ini memudahkan pelanggan untuk memesan makanan atau minuman sendiri di kafe. jadi mereka tidak perlu mengantri atau berjalan ke kasir untuk memesan atau membayar pesanan mereka, kasir akan menemui Anda untuk meminta tagihan. <br>Demo: <a href="https://restoku.herokuapp.com/" target="_blank">restoku.herokuapp.com</a></p>
-            <h5>Technology:</h5>
-            <ul>
-                <li>Python</li>
-                <li>Flask</li>
-                <li>Javascript</li>
-                <li>Jquery</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>Redis</li>
-                <li>SQL</li>
-                <li>RESTful</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+        <!-- Add this script for successful implementation of typed.js -->
+        <script>
+            var typed = new Typed('.element', {
+              // Waits 1000ms after typing "First"
+              strings: ["" , 
+              " ^4000 but ^1500 Everybody called me as " , 
+              " ^1000 MasTya. " , 
+              " a Back-End developer. " , 
+              " and a full time learner. "] ,
+              typeSpeed: 25,
+              startDelay: 0,
+              backSpeed:35,
+              backDelay:1500,
+              loop:true,
+              loopCount:Infinity,
 
-    <div class="modal fade" id="Modalpt2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Sodakoku API</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="carouselpt2" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselpt2" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselpt2" data-slide-to="1"></li>
-                <li data-target="#carouselpt2" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="static/image/pt2/1.png" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="static/image/pt2/2.png" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="static/image/pt2/3.png" alt="Third slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselpt2" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselpt2" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-            <br>
-            <h5>Project Description:</h5>
-            <p>&nbsp&nbsp&nbsp Sodakohku API adalah sebuah RESTful Web Service untuk penggalangan dana untuk streamer, organisasi, dan perorangan. API ini bisa dimanfaatkan untuk Website atau aplikasi Mobile, sehingga donatur bisa mudah untuk mengakses platform ini kelak. <br>Demo: <a href="https://sodakohku.herokuapp.com" target="_blank">sodakohku.herokuapp.com</a></p>
-            <h5>Technology:</h5>
-            <ul>
-                <li>Python</li>
-                <li>Flask</li>
-                <li>MongoDB</li>
-                <li>RESTful</li>
-                <li>JSON</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+            });
+        </script>
 
-    <!-- footer -->
-    <footer class="page-footer font-small">
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:    
-            <a href="https://github.com/ariksetyawan"> Arik Bagus Setyawan</a>
-        </div>
-    </footer>
-    <!-- akhir footer -->
-    <!-- Menyisipkan JQuery dan Javascript Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
-    <script src="static/js/script.js"></script>
-
-</body>
-
+        <!-- Bootstrap 5.2 JS -->
+        <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
