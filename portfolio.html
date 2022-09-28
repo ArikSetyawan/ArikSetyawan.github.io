@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>@ariksetyawan</title>
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap 5.2 CSS -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/timeline.css">
+        <style type="text/css">
+            html,body{
+                height: 100%;
+            }
+            body{
+                font-family: 'Roboto Slab', sans-serif;
+                color: #5a5a5a;
+            }
+            h1{
+                font-size: 58px;
+                padding: 14px 10px;
+            }
+            h2 {
+                font-size: 28px;
+                padding: 14px 10px;
+            }
+            .container{
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            header #buttons{
+                display: inline-block;
+                font-size: 30px;
+                padding: 30px;
+            }
+            header{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .btn:hover{
+                border-color: transparent !important;
+                background-color: transparent !important;
+                text-decoration: none;
+            }
+            .btn:focus{
+                color: #000 !important;
+                border-color: transparent !important;
+                background-color: transparent !important;
+                text-decoration: none;
+            }
+            .content p{
+                font-size: 38px;
+                padding: 14px 10px;
+            }
+            .title{
+                color: #e67e22;
+            }
+            .nav-item{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .nav-item a{
+                text-decoration: none;
+                color: #5a5a5a;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!-- Button for canvas -->
+            <button class="btn btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i id="link-toc" class="fa fa-bars"></i></button>
+            <!-- Canvas -->
+            <div style="width: 200px !important;" class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-code"></i></span> <a href="index.html">.me</a>
+                </div>
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-laptop-code"></i></i></span> <a href="portfolio.html">.Portfolio</a>
+                </div>
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-graduation-cap"></i></span> <a href="education.html">.Education</a>
+                </div>
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-briefcase"></i></span> <a href="experience.html">.Experience</a>
+                </div>
+              </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="title" >My Portfolio</h1>
+                    <br><br>
+                </div>
+                <div class="content col-md-12">
+                    <ul class="timeline">
+                        <li class="timeline-item mb-5">
+                            <h5 class="fw-bold">Contact Tracing Application (2022)</h5>
+                            <span class="text-muted">
+                                In this project, I contribute to building a Web Service for IoT Device and Mobile application. This application already registered <a target="_BLANK" href="./assets/documents/hki_contact_tracing.pdf">IPR</a>. The purpose of this project is to make it easier for people who want to travel but didn't carry a cellphone or have a cellphone to access the <a target="_BLANK" href="https://www.pedulilindungi.id/">Pedulilindungi</a> app they can use their ID card to interact or if they bring their cellphone they can scan the qrcode to interact. The benefit that will be received when using this application is that they will receive a notification if one of the people they meet is indicated to be positive for COVID-19. Technology : Python, Flask, Webservice, API, RESTful-API, Graph Database Neo4j. 
+                                <br>
+                                Demo : - 
+                                <br>
+                                Repository : -
+                            </span>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <h5 class="fw-bold">TK Aisyiyah 3 Rewwin (2021)</h5>
+                            <span class="text-muted">
+                                This app is a request from my client. They ask me to build a landing page and consultation system for parents so they can ask their child to the teacher or counselor. Technology : HTML, CSS, Javascript, Python, Flask, MySQL, Peewee ORM. 
+                                <br>
+                                Demo : <a target="_BLANK" href="https://tkaisyiyahrewwin3.com/">tkaisyiyahrewwin3.com</a>
+                                <br>
+                                Repository : -
+                            </span>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <h5 class="fw-bold">Kurbanku (2020)</h5>
+                            <span class="text-muted">
+                                I created this website when i was intern at <a target="_BLANK" href="http://ijabqabul.id/">PT Ijabqabul Muamalah Indonesia</a>. This is an E-commerce platform selling sheep and cows for Eid al-Adha. Technology : HTML, CSS, Javascript, Python, Flask, MySQL, Peewee ORM.
+                                <br>
+                                Demo : <a target="_BLANK" href="http://kurbanku.mastya.xyz/">kurbanku.mastya.xyz</a>
+                                <br>
+                                Repository : -
+                            </span>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <h5 class="fw-bold">Restoku (2020)</h5>
+                            <span class="text-muted">
+                                This web application is an implementation of my problem about my laziness to go to the cashier because maybe it will have a lot of queue. I made this app so i can order food directly from my table so it will solve the queue. Technology : HTML, CSS, Javascript, Python, Flask, Webservice, API, RESTful-API, Sqlite, Peewee ORM. 
+                                <br>
+                                Demo : <a target="_BLANK" href="https://restoku.herokuapp.com/">restoku.herokuapp.com</a>
+                                <br>
+                                Repository : <a target="_BLANK" href="https://github.com/ArikSetyawan/restoku">github.com/ArikSetyawan/restoku</a>
+                            </span>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <h5 class="fw-bold">Sodakohku (2020)</h5>
+                            <span class="text-muted">
+                                This is a RESTful application inspired by <a target="_BLANK" href="https://saweria.co/">Saweria</a>. In this app I also integrate the payment gateway with <a target="_BLANK" href="https://midtrans.com/">Midtrans</a>. I also built this app for my final assignment. Technology : HTML, CSS, Javascript, Python, Flask, Webservice, API, RESTful-API, MongoDB. 
+                                <br>
+                                Demo : <a target="_BLANK" href="https://sodakohku.herokuapp.com/">sodakohku.herokuapp.com</a>
+                                <br>
+                                Repository : <a target="_BLANK" href="https://github.com/ArikSetyawan/Sodakohku">github.com/ArikSetyawan/Sodakohku</a>
+                            </span>
+                        </li>
+                        <li class="timeline-item mb-5">
+                            <h5 class="fw-bold">Seghoku (2020)</h5>
+                            <span class="text-muted">
+                                This app is my study case for learning about implementing WebService to Website. II also built this app for my final assignment. In this app you can find food by location and tenant. Technology : HTML, CSS, Javascript, ExpressJS, Python, Flask, Webservice, API, RESTful-API, MongoDB. 
+                                <br>
+                                Demo : <a target="_BLANK" href="https://seghoku.herokuapp.com/">seghoku.herokuapp.com</a>
+                                <br>
+                                Repository : <a target="_BLANK" href="https://github.com/ArikSetyawan/Seghoku-Web">github.com/ArikSetyawan/Seghoku-Web</a> & <a target="_BLANK" href="https://github.com/ArikSetyawan/Seghoku-API">github.com/ArikSetyawan/Seghoku-API</a>
+                            </span>
+                        </li>
+                    </ul>
+                    
+                    <br><br><br>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Import typed.min.js file from typed.js folder -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        
+        <!-- Add jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- Add this script for successful implementation of typed.js -->
+        <script>
+            var typed = new Typed('.element', {
+              // Waits 1000ms after typing "First"
+              strings: ["" , 
+              " ^4000 but ^1500 Everybody called me as " , 
+              " ^1000 MasTya. " , 
+              " a Back-End developer. " , 
+              " and a full time learner. "] ,
+              typeSpeed: 25,
+              startDelay: 0,
+              backSpeed:35,
+              backDelay:1500,
+              loop:true,
+              loopCount:Infinity,
+
+            });
+        </script>
+
+        <!-- Bootstrap 5.2 JS -->
+        <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
