@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>@ariksetyawan | Lestari Worklog</title>
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap 5.2 CSS -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Fancy box -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style type="text/css">
+            html,body{
+                height: 100%;
+            }
+            body{
+                font-family: 'Roboto Slab', sans-serif;
+                color: #5a5a5a;
+            }
+            h1{
+                font-size: 58px;
+                padding: 14px 10px;
+            }
+            h2 {
+                font-size: 28px;
+                padding: 14px 10px;
+            }
+            .container{
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            header #buttons{
+                display: inline-block;
+                font-size: 30px;
+                padding: 30px;
+            }
+            header{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .btn:hover{
+                border-color: transparent !important;
+                background-color: transparent !important;
+                text-decoration: none;
+            }
+            .btn:focus{
+                color: #000 !important;
+                border-color: transparent !important;
+                background-color: transparent !important;
+                text-decoration: none;
+            }
+            .content p{
+                font-size: 38px;
+                padding: 14px 10px;
+            }
+            .title{
+                color: #e67e22;
+            }
+            .nav-item{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .nav-item a{
+                text-decoration: none;
+                color: #5a5a5a;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!-- Button for canvas -->
+            <button class="btn btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i id="link-toc" class="fa fa-bars"></i></button>
+            <!-- Canvas -->
+            <div style="width: 200px !important;" class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-code"></i></span> <a href="../index.html">.me</a>
+                </div>
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-laptop-code"></i></i></span> <a href="../portfolio.html">.Portfolio</a>
+                </div>
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-graduation-cap"></i></span> <a href="../education.html">.Education</a>
+                </div>
+                <div class="nav-item">
+                    <span><i class="fa-solid fa-briefcase"></i></span> <a href="../experience.html">.Experience</a>
+                </div>
+              </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="title">Lestari Work-log</h1>
+                    <br><br>
+                </div>
+                <div class="content col-md-12">
+                    <!-- Gallery -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <a href="../assets/images/lestari_worklog/1_login.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_1">
+                                <img
+                                    src="../assets/images/lestari_worklog/1_login.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water"
+                                    style="max-height: 320px !important; object-fit: cover; border: 1px solid #5a5a5a; object-position: 50% 37%;"
+                                />
+                            </a>
+                        
+                            <a href="../assets/images/lestari_worklog/2_dashboard.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_2">
+                                <img
+                                    src="../assets/images/lestari_worklog/2_dashboard.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape"
+                                    style="max-height: 621px !important; object-fit: cover; border: 1px solid #5a5a5a;"
+                                />
+                            </a>
+                        </div>
+                    
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <a href="../assets/images/lestari_worklog/3_dashboard.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_3">
+                                <img
+                                    src="../assets/images/lestari_worklog/3_dashboard.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Mountains in the Clouds"
+                                    style="max-height: 621px !important; object-fit: cover; border: 1px solid #5a5a5a;"
+                                />
+                            </a>
+                        
+                            <a href="../assets/images/lestari_worklog/4_sync.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_4">
+                                <img
+                                    src="../assets/images/lestari_worklog/4_sync.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water"
+                                    style="max-height: 320px !important; object-fit: cover; border: 1px solid #5a5a5a; object-position: top;"
+                                />
+                            </a>
+                        </div>
+                    
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <a href="../assets/images/lestari_worklog/6_newWorking.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_5">
+                                <img
+                                    src="../assets/images/lestari_worklog/6_newWorking.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Waves at Sea"
+                                    style="max-height: 320px !important; object-fit: cover; border: 1px solid #5a5a5a; object-position: top;"
+                                />
+                            </a>
+                        
+                            <a href="../assets/images/lestari_worklog/5_working.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_6">
+                                <img
+                                    src="../assets/images/lestari_worklog/5_working.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Yosemite National Park"
+                                    style="max-height: 621px !important; object-fit: cover; border: 1px solid #5a5a5a; object-position: top;"
+                                />
+                            </a>
+                        </div>
+                        <!-- ------------------------------------- -->
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <a href="../assets/images/lestari_worklog/7_scanWorking.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_7">
+                                <img
+                                    src="../assets/images/lestari_worklog/7_scanWorking.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water"
+                                    style="max-height: 320px !important; object-fit: cover; border: 1px solid #5a5a5a; object-position: 50% 37%;"
+                                />
+                            </a>
+                        
+                            <a href="../assets/images/lestari_worklog/8_scannedWorking.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_8">
+                                <img
+                                    src="../assets/images/lestari_worklog/8_scannedWorking.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape"
+                                    style="max-height: 621px !important; object-fit: cover; border: 1px solid #5a5a5a; object-position: top;"
+                                />
+                            </a>
+                        </div>
+                    
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <a href="../assets/images/lestari_worklog/9_detailWorking.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_9">
+                                <img
+                                    src="../assets/images/lestari_worklog/9_detailWorking.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Mountains in the Clouds"
+                                    style="max-height: 621px !important; object-fit: cover; border: 1px solid #5a5a5a; object-position: top;"
+                                />
+                            </a>
+                        
+                            <a href="../assets/images/lestari_worklog/10_pauseWorking.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_10">
+                                <img
+                                    src="../assets/images/lestari_worklog/10_pauseWorking.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water"
+                                    style="max-height: 320px !important; object-fit: cover; border: 1px solid #5a5a5a; object-position: bottom;"
+                                />
+                            </a>
+                        </div>
+                    
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <a href="../assets/images/lestari_worklog/11_StopWorking.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_11">
+                                <img
+                                    src="../assets/images/lestari_worklog/11_StopWorking.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Waves at Sea"
+                                    style="max-height: 320px !important; object-fit: cover; border: 1px solid #5a5a5a; object-position: 50% 37%;"
+                                />
+                            </a> 
+                        
+                            <a href="../assets/images/lestari_worklog/12_reportWorking.png" data-fancybox="lestariworklog1" class="ImageSlide" id="ImageSlide_12">
+                                <img
+                                    src="../assets/images/lestari_worklog/12_reportWorking.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Yosemite National Park"
+                                    style="max-height: 621px !important; object-fit: cover; border: 1px solid #5a5a5a; object-position: top;"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Gallery -->
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Add jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap 5.2 JS -->
+        <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Fancy Box -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>
